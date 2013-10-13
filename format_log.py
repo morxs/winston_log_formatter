@@ -39,6 +39,8 @@ if len(sys.argv) > 1:
 		f.flush()
 		os.fsync(f.fileno())
 		f.close()
+		
+		print '\r\n  Done formatting', sys.argv[1]
 else:
 	print '\r\n  format_log.py: a json log tidy\r\n'
-	print '  Usage: python format_log.py <input_file>'
+	print '  Usage: python.exe format_log.py <input_file>'
