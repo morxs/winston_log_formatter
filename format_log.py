@@ -12,7 +12,14 @@ import shutil
 #cmdargs = str(sys.argv)
 #print cmdargs
 
+backup_file_extension = '.bak'
+
 if len(sys.argv) > 1:
+	# copy file for backup purpose
+	shutil.copy2(sys.argv[1], sys.argv[1] + backup_file_extension)
+	print '\r\n  backing up file... done.'
+	
+	# start manipulate file
 	with open(sys.argv[1], 'r+b') as f:
 
 		# go to beginning of file and read the whole file into list
