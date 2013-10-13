@@ -1,6 +1,8 @@
 ## This script utility is to manipulate error log made by nodejs logger
 ## so it can be consumed and converted into CSV format, which later
 ## can be converted into tabulator date on Excel
+##
+## Currently runnable on python 2.7.3
 
 import os
 import sys
