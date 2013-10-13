@@ -6,13 +6,13 @@
 
 import os
 import sys
+import shutil
 
-total = len(sys.argv)
-
+#total = len(sys.argv)
 #cmdargs = str(sys.argv)
 #print cmdargs
 
-if total > 1:
+if len(sys.argv) > 1:
 	with open(sys.argv[1], 'r+b') as f:
 
 		# go to beginning of file and read the whole file into list
