@@ -29,10 +29,10 @@ if len(sys.argv) > 1:
 		# manipulate the list
 		for index in range(len(semua_file)):
 			if index == 0:
-				semua_file[index] = '{[\r\n' + semua_file[index]
+				semua_file[index] = '[' + semua_file[index]
 				semua_file[index] = semua_file[index].replace('}', '},', 1)
 			elif index == len(semua_file) - 1:
-				semua_file[index] = semua_file[index] + '\r\n]}'
+				semua_file[index] = semua_file[index] + ']'
 			else:
 				semua_file[index] = semua_file[index].replace('}', '},', 1)
 
